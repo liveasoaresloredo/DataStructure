@@ -3,7 +3,6 @@ package pilha;
 import java.util.Arrays;
 
 public class EstruturaEstatica<T> {
-
     protected T[] elementos;
     protected int tamanho;
 
@@ -24,6 +23,7 @@ public class EstruturaEstatica<T> {
     protected boolean adiciona(T elemento){
         this.aumentaCapacidade();
         if (this.tamanho < this.elementos.length){
+            this.elementos[this.tamanho] = elemento;
             this.tamanho++;
             return true;
         }
@@ -31,12 +31,14 @@ public class EstruturaEstatica<T> {
     }
 
     protected boolean adiciona(int posicao, T elemento){
-        if (posicao<0 || posicao > tamanho){
+
+        if (posicao < 0 || posicao > tamanho){
             throw new IllegalArgumentException("Posição inválida");
         }
+
         this.aumentaCapacidade();
 
-        for (int i=this.tamanho-1; i>=posicao; i--){
+        for (int i=this.tamanho-1; i >= posicao; i--){
             this.elementos[i+1] = this.elementos[i];
         }
         this.elementos[posicao] = elemento;
@@ -70,11 +72,22 @@ public class EstruturaEstatica<T> {
         return this.tamanho;
     }
 
-    @Override
-    public String toString() {
-        return "EstruturaEstatica{" +
-                "elementos=" + Arrays.toString(elementos) +
-                ", tamanho=" + tamanho +
-                '}';
+
+    public String toString(){
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+
+        for (int i=0; i<this.tamanho-1; i++){
+            s.append(this.elementos[i]);
+            s.append(", ");
+        }
+
+        if (this.tamanho>0){
+            s.append(this.elementos[this.tamanho-1]);
+        }
+
+        s.append("]");
+
+        return s.toString();
     }
 }
