@@ -8,6 +8,11 @@ public class Exer07 {
         imprimeResultado(4);
         imprimeResultado(10);
         imprimeResultado(25);
+        imprimeResultado(10035);
+
+        imprimeResultadoQualquerBase(24, 16);
+        imprimeResultadoQualquerBase(10035, 8);
+        imprimeResultadoQualquerBase(10035, 16);
     }
 
     public static void imprimeResultado(int numero){
