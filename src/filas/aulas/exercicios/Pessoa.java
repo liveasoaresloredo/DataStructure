@@ -1,6 +1,6 @@
-package pilha.filas.aulas.exercicios;
+package filas.aulas.exercicios;
 
-public class Pessoa implements Comparable<Pessoa>{
+public class Pessoa implements Comparable<Pessoa> {
 
     private String nome;
     private int prioridade;

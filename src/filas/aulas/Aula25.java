@@ -1,4 +1,4 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

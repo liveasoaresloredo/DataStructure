@@ -1,4 +1,4 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
 public class Classe1 implements Inerface1{
 

@@ -1,4 +1,4 @@
-package pilha.filas;
+package filas;
 
 public class FilaComPrioridade<T> extends Fila<T> {
     public void enfileira(T elemento){

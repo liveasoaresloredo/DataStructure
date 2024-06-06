@@ -1,6 +1,6 @@
-package pilha.filas.aulas.exercicios;
+package filas.aulas.exercicios;
 
-import pilha.filas.Fila;
+import filas.Fila;
 
 public class Exer02 {
     public static void main(String[] args) {

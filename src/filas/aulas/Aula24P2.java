@@ -1,6 +1,6 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
-import pilha.filas.FilaComPrioridade;
+import filas.FilaComPrioridade;
 
 public class Aula24P2 {
     public static void main(String[] args) {

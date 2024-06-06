@@ -1,4 +1,4 @@
-package pilha.filas.aulas.exercicios;
+package filas.aulas.exercicios;
 
 public class Documento {
 

@@ -1,7 +1,7 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
-import pilha.filas.Fila;
-import pilha.filas.FilaComPrioridade;
+import filas.Fila;
+import filas.FilaComPrioridade;
 
 import java.util.LinkedList;
 import java.util.Queue;

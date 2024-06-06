@@ -1,6 +1,6 @@
-package pilha.filas.aulas.exercicios;
+package filas.aulas.exercicios;
 
-import pilha.filas.Fila;
+import filas.Fila;
 
 import java.util.Random;
 
@@ -19,7 +19,7 @@ public class Exer04 {
             num = aleatorio.nextInt(10);
         }
 
-        System.out.println("Númeor = " + num);
+        System.out.println("Número = " + num);
 
         while (fila.tamanho() > 1){
             for (int i=0; i<num; i++){

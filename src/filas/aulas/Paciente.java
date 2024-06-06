@@ -1,4 +1,4 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
 public class Paciente implements Comparable<Paciente> {
 

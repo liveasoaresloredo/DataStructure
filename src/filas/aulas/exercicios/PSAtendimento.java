@@ -1,20 +1,20 @@
-package pilha.filas.aulas.exercicios;
+package filas.aulas.exercicios;
 
-import pilha.filas.FilaComPrioridade;
+import filas.FilaComPrioridade;
 
 public class PSAtendimento implements Runnable{
-    private FilaComPrioridade<Pessoa> filaComPrioridade;
+    private FilaComPrioridade<Pessoa> fila;
 
     public PSAtendimento(FilaComPrioridade<Pessoa> filaComPrioridade){
         super();
-        this.filaComPrioridade = filaComPrioridade;
+        this.fila = filaComPrioridade;
     }
 
     @Override
     public void run(){
-        while (!filaComPrioridade.estaVazia()){
+        while (!fila.estaVazia()){
             try {
-                System.out.println(filaComPrioridade.desenfileira() + " atendida.");
+                System.out.println(fila.desenfileira() + " atendida.");
                 Thread.sleep(5000);
             } catch (InterruptedException e){
                 e.printStackTrace();

@@ -1,4 +1,4 @@
-package pilha.filas;
+package filas;
 
 import pilha.EstruturaEstatica;
 

@@ -1,4 +1,4 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
 import java.io.FilterOutputStream;
 import java.util.LinkedList;

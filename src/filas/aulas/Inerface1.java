@@ -1,4 +1,4 @@
-package pilha.filas.aulas;
+package filas.aulas;
 
 public interface Inerface1 {
 
